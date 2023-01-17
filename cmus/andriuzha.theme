@@ -1,0 +1,71 @@
+# @andriuzha
+
+# Para instalar el tema copia el archivo a la carpeta: 
+# MacOS: /opt/local/share/cmus
+# Linux: /usr/share/cmus/ 
+
+
+# Para habilitar el tema ingrese el comando 
+# :colorscheme andriuzha
+
+
+# color de texto predeterminado
+set color_win_fg=default
+
+# color de fondo 
+set color_win_bg=default
+
+# colores de línea de comandos
+set color_cmdline_bg=default
+set color_cmdline_fg=default
+set color_error=160
+set color_info=136
+set color_separator=240
+
+# línea de estado inferior
+set color_statusline_bg=0
+set color_statusline_fg=37
+
+# línea de título inferior
+set color_titleline_bg=0
+set color_titleline_fg=136
+
+# área de título superior
+set color_win_title_bg=0
+set color_win_title_fg=64
+##### reproducción de colores de archivo 
+# texto de la pista que se está reproduciendo actualmente no seleccionado
+set color_win_cur=33
+
+# selección activa para la pista que se está reproduciendo actualmente
+set color_win_cur_sel_bg=0
+set color_win_cur_sel_fg=33
+
+# selección inactiva para la pista que se está reproduciendo actualmente
+set color_win_inactive_cur_sel_bg=default
+set color_win_inactive_cur_sel_fg=125
+
+##### colores de archivo que no se reproducen 
+# selección activa
+set color_win_sel_bg=0
+set color_win_sel_fg=166
+
+# selección inactiva
+set color_win_inactive_sel_bg=default
+set color_win_inactive_sel_fg=125
+
+##### colores de la vista del explorador de archivos
+# color de la lista de directorios
+set color_win_dir=33
+
+
+
+## formatos para para la pista que se está reproduciendo actualmente
+set format_current= %{?a?%a - }%t
+set format_playlist= %a - %t %= %d 
+set format_statusline= %{status} %{?show_playback_position?%{position} %{?duration?• %{duration} }?%{?duration?%{duration} }}• %{?volume>=0?vol %{?lvolume!=rvolume?%{lvolume},%{rvolume} ?%{volume} }}%{?stream?buf %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} • %1{continue}%1{follow}%1{repeat}%1{shuffle} 
+set format_title=%{?a?%a - }%t
+set format_trackwin= • %t %= %d 
+set format_trackwin_album= %l %{?y?(%y)}
+set format_trackwin_va= • %t %= %d
+set format_treewin=• %l
